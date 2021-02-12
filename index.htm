@@ -8,48 +8,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/estyle.css">
     <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <picture>
+        <picture class="header__logo">
             <img src="img/logo.png" alt="Logo">
         </picture>
-        <nav>
+        <nav class="header__list">
             <ol>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#eventos">Experiencia</a></li>
-                <li><a href="#Contacto">Trabajemos juntos</a></li>
+                <li class="header__list-items"><a href="#portafolio">Portafolio</a></li>
+                <li class="header__list-items"><a href="#eventos">Experiencia</a></li>
+                <li class="header__list-items" id="header-tra"><a href="#Contacto">Trabajemos juntos</a></li>
             </ol>
         </nav>
     </header>
-    <section>
-        <h1>
-            Hola soy <strong> un ingeniero en sistemas</strong> un sesarollador <br> web con conocimientos basicos
+    <section class="hero">
+        <h1 class="hero-titulo">
+            Hola! soy juan Gámez <strong><br> Desarollador</strong> de javascript con <br>
+            pasión por la enseñanza
         </h1>
-        <figure>
-            <img src="img/hero.jpg" alt="Logo">
+        <figure class="herro-logo">
+           <img src="img/hero.jpg" alt="Logo">
         </figure>
     </section>
-    <section id="portafolio">
-        <article>
-            <h2>Portafolio proyectos destacados</h2>
-            <h3>Platzi Video</h3>
-            <h6>React native / React</h6>
-            <p> <small> Fecha 01/07/2018 </small></p>
-            <p> <small> Puedes verlo en:: <strong> wwww.platzi.com</strong> </small> </p>
-            <p> Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el
+    <section id="portafolio" class="portafolio">
+        <h2 class="portafolio__portafolio">Portafolio (proyectos destacados)</h2>
+        <article class="project">
+           <div class="project-details">
+            <h3 class="project-title" >Platzi Video</h3>
+            <h6 class="project-course">React native / React</h6>
+            <p class="project-date"> Fecha <small>  01/07/2018 </small></p>
+            <p class="project-url"> Puedes verlo en::<small></small>  <strong> wwww.platzi.com</strong> </small> </p>
+            <p class="project-description"> Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el
                 funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de
                 navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma
                 El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo
                 tener una vida de constante aprendizaje.</p>
-                <figure>
-                    <img src="./img/platzi-video-react-native.png" alt="">
-                </figure>
-            <section id="eventos">
+
+           </div>
+            <figure class="project-imagencontainer">
+                <img src="./img/platzi-video-react-native.png" alt="">
+            </figure>
+        </article>
+        
+    </section>
+            <section class="evento" id="eventos">
                 <h2>Mas sobre mi Experiencia</h2>
                 <article>
-                    <figure>
+                    <figure class="evento__figure">
                         <img src="./img/platzi-conf.jpg" alt="">
                     </figure>
                     <h3>Platzi conf mexico 2018</h3>
@@ -62,10 +73,10 @@
     <section id="contacto">
         <form action="/sucription">
             <h3>¿Creamos algo juntos</h3>
-           <input type="text"  placeholder="Dejame tu email"> 
-           <input type="submit">
-           <button> Enviar</button>
-           
+            <input type="text" placeholder="Dejame tu email">
+            <input type="submit">
+            <button> Enviar</button>
+
         </form>
     </section>
     <section> </section>
